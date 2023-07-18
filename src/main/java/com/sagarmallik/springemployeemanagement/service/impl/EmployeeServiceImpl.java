@@ -1,6 +1,5 @@
 package com.sagarmallik.springemployeemanagement.service.impl;
 
-// import java.util.List;
 import java.util.UUID;
 
 import org.springframework.beans.BeanUtils;
@@ -43,12 +42,6 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
     return employee.getEmployeeId();
   }
-  /*
-   * @Override
-   * public List<Employee> getAllEmployees() {
-   * return employeeRepository.findAll();
-   * }
-   */
 
   @Override
   public Page<Employee> getAllEmployees(int page, int size, String sortBy) {
